@@ -1,0 +1,21 @@
+#root {
+  text-align: center;
+  padding: 2rem;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+.container h1 {
+  color: #2c3e50;
+}
+
+.container h2 {
+  color: #3498db;
+}
+
+.container h3 {
+  color: #141d6c;
+}
