@@ -1,0 +1,38 @@
+.app-root {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.2;
+  text-align: left;
+  color: #333333;
+}
+
+.app-input {
+  margin-bottom: 20px;
+}
+
+.app-button {
+  height: 48px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+}
