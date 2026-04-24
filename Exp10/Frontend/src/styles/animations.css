@@ -1,0 +1,169 @@
+/* ============================================
+   SOS Alert System — Advanced Animations
+   ============================================ */
+
+/* ── Entry Animations ── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.88) translateY(16px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ── 3D Card Entrance ── */
+@keyframes card3dIn {
+  from {
+    opacity: 0;
+    transform: perspective(800px) rotateX(12deg) translateY(24px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(800px) rotateX(0deg) translateY(0) scale(1);
+  }
+}
+
+/* ── SOS Core Animations ── */
+@keyframes sosPulseRing {
+  0%   { transform: scale(1);   opacity: 0.7; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+@keyframes sosGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 30px rgba(229,62,62,0.6),
+      0 0 60px rgba(229,62,62,0.3),
+      0 0 100px rgba(229,62,62,0.1),
+      inset 0 0 30px rgba(255,255,255,0.08);
+  }
+  50% {
+    box-shadow:
+      0 0 50px rgba(229,62,62,0.9),
+      0 0 100px rgba(229,62,62,0.5),
+      0 0 160px rgba(229,62,62,0.2),
+      inset 0 0 40px rgba(255,255,255,0.15);
+  }
+}
+
+@keyframes sosBreath {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.03); }
+}
+
+/* ── Radar Sweep ── */
+@keyframes radarSweep {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes radarPing {
+  0%   { transform: scale(0.5); opacity: 1; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+/* ── Spinner ── */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Heartbeat ── */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14%       { transform: scale(1.08); }
+  28%       { transform: scale(1); }
+  42%       { transform: scale(1.08); }
+}
+
+/* ── Toast ── */
+@keyframes toastIn {
+  from { opacity: 0; transform: translateX(100%) scale(0.9); }
+  to   { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes toastOut {
+  from { opacity: 1; transform: translateX(0) scale(1); }
+  to   { opacity: 0; transform: translateX(100%) scale(0.9); }
+}
+
+/* ── Shimmer loading ── */
+@keyframes shimmer {
+  0%   { background-position: -800px 0; }
+  100% { background-position: 800px 0; }
+}
+
+/* ── Floating up ── */
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+/* ── Background aurora ── */
+@keyframes aurora1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(80px, -60px) scale(1.15); }
+  66%       { transform: translate(-40px, 40px) scale(0.9); }
+}
+@keyframes aurora2 {
+  0%, 100% { transform: translate(0, 0) scale(1.1); }
+  33%       { transform: translate(-80px, 40px) scale(0.9); }
+  66%       { transform: translate(60px, -80px) scale(1.2); }
+}
+@keyframes aurora3 {
+  0%, 100% { transform: translate(0, 0) scale(0.9); }
+  50%       { transform: translate(-60px, -40px) scale(1.1); }
+}
+
+/* ── Background dot grid float ── */
+@keyframes gridPan {
+  0%   { background-position: 0 0; }
+  100% { background-position: 40px 40px; }
+}
+
+/* ── Status dot pulse ── */
+@keyframes statusPing {
+  0%   { transform: scale(1);   opacity: 1; }
+  75%  { transform: scale(2.5); opacity: 0; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+/* ── Gradient text shift ── */
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ── Alert card slide-in ── */
+@keyframes alertSlideIn {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ── Utility classes ── */
+.animate-fade-in      { animation: fadeIn 0.4s ease forwards; }
+.animate-fade-in-up   { animation: fadeInUp 0.55s cubic-bezier(0.19,1,0.22,1) forwards; }
+.animate-card-3d      { animation: card3dIn 0.6s cubic-bezier(0.19,1,0.22,1) forwards; }
+.animate-float        { animation: floatUp 4s ease-in-out infinite; }

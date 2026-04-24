@@ -1,0 +1,16 @@
+com\sosapp\repository\UserRepository.class
+com\sosapp\config\JwtAuthenticationFilter.class
+com\sosapp\dto\AuthResponse.class
+com\sosapp\repository\AlertRepository.class
+com\sosapp\config\SecurityConfig.class
+com\sosapp\controller\SosController.class
+com\sosapp\model\Alert.class
+com\sosapp\config\JwtService.class
+com\sosapp\service\AuthService.class
+com\sosapp\model\Alert$Builder.class
+com\sosapp\SosApplication.class
+com\sosapp\service\SosService.class
+com\sosapp\model\User$Builder.class
+com\sosapp\model\User.class
+com\sosapp\controller\AuthController.class
+com\sosapp\dto\AuthRequest.class

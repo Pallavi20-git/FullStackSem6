@@ -1,0 +1,114 @@
+/* ============================================
+   SOS Alert System — Enhanced Design Tokens
+   ============================================ */
+
+:root {
+  /* ── Core Backgrounds ── */
+  --bg-base:        #05050a;
+  --bg-surface:     #0c0c14;
+  --bg-card:        #111120;
+  --bg-card-hover:  #161628;
+  --bg-input:       #0d0d1a;
+  --bg-glass:       rgba(17, 17, 32, 0.7);
+  --bg-glass-light: rgba(255, 255, 255, 0.03);
+
+  /* ── Primary — Crimson SOS ── */
+  --primary:        #e53e3e;
+  --primary-light:  #fc8181;
+  --primary-hover:  #f56565;
+  --primary-dark:   #9b2c2c;
+  --primary-glow:   rgba(229, 62, 62, 0.5);
+  --primary-dim:    rgba(229, 62, 62, 0.12);
+  --primary-border: rgba(229, 62, 62, 0.25);
+
+  /* ── Accent Blue (for contrast highlights) ── */
+  --accent:         #667eea;
+  --accent-dim:     rgba(102, 126, 234, 0.12);
+
+  /* ── Text ── */
+  --text-primary:   #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted:     #64748b;
+  --text-faint:     #334155;
+
+  /* ── Borders ── */
+  --border:         rgba(255, 255, 255, 0.06);
+  --border-strong:  rgba(255, 255, 255, 0.1);
+  --border-focus:   rgba(229, 62, 62, 0.6);
+  --border-card:    rgba(255, 255, 255, 0.05);
+
+  /* ── State Colors ── */
+  --success:        #22c55e;
+  --success-bg:     rgba(34, 197, 94, 0.10);
+  --success-border: rgba(34, 197, 94, 0.25);
+  --success-glow:   rgba(34, 197, 94, 0.4);
+
+  --danger:         #ef4444;
+  --danger-bg:      rgba(239, 68, 68, 0.10);
+  --danger-border:  rgba(239, 68, 68, 0.25);
+
+  --warning:        #f59e0b;
+
+  /* ── Typography ── */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* ── Font Scale ── */
+  --text-xs:   0.70rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+
+  /* ── Spacing Scale ── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-7:  1.75rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-14: 3.5rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* ── Border Radius ── */
+  --radius-sm:   0.375rem;
+  --radius-md:   0.625rem;
+  --radius-lg:   1rem;
+  --radius-xl:   1.25rem;
+  --radius-2xl:  1.75rem;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-xs:  0 1px 2px rgba(0,0,0,0.5);
+  --shadow-sm:  0 2px 8px rgba(0,0,0,0.4);
+  --shadow-md:  0 4px 20px rgba(0,0,0,0.5);
+  --shadow-lg:  0 8px 40px rgba(0,0,0,0.6);
+  --shadow-xl:  0 16px 64px rgba(0,0,0,0.7);
+  --shadow-red: 0 0 32px rgba(229,62,62,0.4), 0 0 64px rgba(229,62,62,0.15);
+  --shadow-red-xl: 0 0 60px rgba(229,62,62,0.6), 0 0 120px rgba(229,62,62,0.25);
+
+  /* ── Transitions ── */
+  --ease-out-expo:  cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-spring:    cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --transition-fast:   0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow:   0.45s var(--ease-out-expo);
+
+  /* ── Z-index ── */
+  --z-base:    1;
+  --z-above:   10;
+  --z-nav:     50;
+  --z-modal:   100;
+  --z-toast:   1000;
+}
