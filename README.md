@@ -63,22 +63,6 @@ Implementing secure authentication using JSON Web Tokens for login and protected
 
 Integrating React frontend with Spring Boot backend using REST APIs, along with basic real-time updates using WebSockets.
 
----
-
-## 📁 Project Structure
-
-```id="proj123"
-Exp01/
-Exp02/
-Exp03/
-Exp04/
-Exp05/
-Exp06/
-Exp07/
-Exp08/
-Exp09/
-Exp10/
-```
 
 ---
 
